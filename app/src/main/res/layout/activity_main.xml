@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.roskata.quizzapp.MainActivity">
+
+    <TextView
+        android:id="@+id/countLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/question_label_margin_top"
+        android:text="@string/question_number_label"
+        android:textSize="@dimen/count_label_text_size" />
+
+    <ImageView
+        android:id="@+id/app_image"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:contentDescription="@string/img_question"
+        android:src="@drawable/es_les_paul_black_beauty" />
+
+    <TextView
+        android:id="@+id/questionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/question_margin_top"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/question_margin_top"
+        android:gravity="center_horizontal"
+        android:text="@string/question_content"
+        android:textSize="@dimen/question_text_size" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answerBtn1"
+                    android:layout_width="@dimen/answerBtn_width"
+                    android:layout_height="@dimen/answerBtn_height"
+                    android:text="@string/answer_one_label" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <RadioButton
+                    android:id="@+id/answerBtn2"
+                    android:layout_width="@dimen/answerBtn_width"
+                    android:layout_height="@dimen/answerBtn_height"
+                    android:text="@string/answer_two_label" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <RadioButton
+                    android:id="@+id/answerBtn3"
+                    android:layout_width="@dimen/answerBtn_width"
+                    android:layout_height="@dimen/answerBtn_height"
+                    android:text="@string/answer_three_label" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <RadioButton
+                    android:id="@+id/answerBtn4"
+                    android:layout_width="@dimen/answerBtn_width"
+                    android:layout_height="@dimen/answerBtn_height"
+                    android:text="@string/answer_four_label" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/check_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkAnswer"
+                android:text="@string/check" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

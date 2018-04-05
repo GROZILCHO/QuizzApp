@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.roskata.quizzapp.ResultActivity"
+    android:background="@color/tan_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_label"
+        android:textSize="@dimen/result_label_text_size"
+        android:layout_marginTop="@dimen/result_label_margin_top"/>
+
+    <TextView
+        android:id="@+id/resultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score_label"
+        android:textSize="@dimen/result_text_view_size"
+        android:layout_marginTop="@dimen/result_text_view_margin_top"/>
+
+    <TextView
+        android:id="@+id/totalScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_score_label"
+        android:textSize="@dimen/result_label_text_size"
+        android:layout_marginTop="@dimen/result_text_view_margin_top"/>
+
+    <Button
+        android:layout_width="@dimen/result_button_width"
+        android:layout_height="@dimen/result_button_height"
+        android:text="@string/return_name"
+        android:textSize="@dimen/result_label_text_size"
+        android:layout_marginTop="@dimen/result_button_margin_top"
+        android:onClick="returnTop"/>
+
+</LinearLayout>
